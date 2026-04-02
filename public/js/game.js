@@ -13,7 +13,6 @@ const player = {
 };
 
 let blocks = [];
-let hue = 0;
 let score = 0;
 let gameRunning = true;
 let startTime = Date.now();
@@ -24,11 +23,10 @@ function createBlock() {
         y: 0,
         width: 30 + Math.random() * 40, // Random width between 30-70
         height: 50,
-        color: `hsl(${hue}, 100%, 50%)`,
+        color: `hsl(${Math.random() * 360}, ${30 + Math.random() * 20}%, ${70 + Math.random() * 20}%)`,
         speed: 2 + Math.random() * 3
     };
     blocks.push(block);
-    hue = (hue + 15) % 360; // Cycle through colors
 }
 
 function update() {
@@ -101,7 +99,6 @@ function restart() {
     gameRunning = true;
     startTime = Date.now();
     gameOverElement.style.display = 'none';
-    hue = 0; // Reset color cycle
 }
 
 // Controls
