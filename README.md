@@ -1,3 +1,16 @@
+---
+## Project Information
+
+| Field | Details |
+|-------|---------|
+| **NetID** | hyoyook |
+| **Name** | Hyobin Yook |
+| **GitHub Repository** | https://github.com/hyoyook/css382-one |
+| **Deployed Site** | https://yook-css382-one.netlify.app/ |
+| **Idea** | An arcade-style dodging game where players control a circle at the bottom of the screen and avoid falling blocks of varying widths and random pastel colors. The game scores players based on survival time in seconds, with collision detection determining game over. Built with HTML5 Canvas, JavaScript, and deployed on Netlify. |
+
+---
+
 # Dodge the Falling Blocks
 
 A fun, interactive web game built for **UWB CSS382** class project.
