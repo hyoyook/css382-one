@@ -21,7 +21,7 @@ function createBlock() {
     const block = {
         x: Math.random() * (canvas.width - 50),
         y: 0,
-        width: 50,
+        width: 30 + Math.random() * 40, // Random width between 30-70
         height: 50,
         color: 'red',
         speed: 2 + Math.random() * 3
@@ -35,12 +35,10 @@ function update() {
     // Move player
     if (keys.left) player.x -= 5;
     if (keys.right) player.x += 5;
-    if (keys.up) player.y -= 5;
-    if (keys.down) player.y += 5;
+    player.y = canvas.height - 50; // Fixed at bottom
 
     // Keep player in bounds
     player.x = Math.max(player.radius, Math.min(canvas.width - player.radius, player.x));
-    player.y = Math.max(player.radius, Math.min(canvas.height - player.radius, player.y));
 
     // Move blocks
     blocks.forEach(block => {
@@ -116,7 +114,7 @@ document.addEventListener('keyup', e => {
 canvas.addEventListener('mousemove', e => {
     const rect = canvas.getBoundingClientRect();
     player.x = e.clientX - rect.left;
-    player.y = e.clientY - rect.top;
+    player.y = canvas.height - 50; // Fixed at bottom
 });
 
 restartBtn.addEventListener('click', restart);
