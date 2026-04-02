@@ -1,4 +1,3 @@
----
 ## Project Information
 
 | Field | Details |
@@ -119,12 +118,12 @@ This entire project was created **almost exclusively using GitHub Copilot**, inc
 
 Copilot provided intelligent code suggestions, completions, and structure guidance throughout the development process, making this a showcase of AI-assisted web game development.
 
-## 📝 CSS382 Class Information
+## 📝 Course Information
 
-**Course**: CSS 382 - Computer Game Design & Development  
+**Course**: CSS 382 A Sp 26: Introduction To Artificial Intelligence  
 **Institution**: University of Washington, Bothell  
-**Project Type**: Web-Based Game Implementation  
-**Semester**: Spring 2026
+**Semester**: Spring 2026  
+**Professor**: Dr. Yusuf Pisan
 
 ## 📄 License
 
